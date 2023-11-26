@@ -1,0 +1,19 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
