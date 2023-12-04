@@ -11,11 +11,6 @@ import "dotenv/config";
 
 const router = express.Router();
 
-const corsOptions = {
-  origin: process.env.CORS_ORIGIN,
-  methods: "POST",
-};
-
 const storage = multer.memoryStorage();
 const upload = multer({
   storage: storage,
@@ -23,7 +18,6 @@ const upload = multer({
 
 router.post(
   "/",
-  cors(corsOptions),
   upload.any(),
   async (req: Request, res: Response) => {
     try {
