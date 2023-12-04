@@ -131,3 +131,6 @@ dist
 
 # scratch files
 scratch.*
+
+# registrations folder
+registrations/
