@@ -70,7 +70,7 @@ router.post(
       await executePgQuery(query, params);
 
       res.status(200).json({
-        message: "Registration successful",
+        message: `Registration successful. Your registration id is "${regnId}". Please contact the organizers to get your registration confirmation document.`,
       });
     } catch (err) {
       console.log(err);
